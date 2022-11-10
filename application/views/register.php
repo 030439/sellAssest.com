@@ -12,7 +12,7 @@ function displayHint(str) {
         document.getElementById("Hint").innerHTML = this.responseText;
       }
     };
-    xmlhttp.open("GET", "register?getparameter=" + str, true);
+    xmlhttp.open("POST", "register?getparameter=" + str, true);
     xmlhttp.send();
   }
 }
