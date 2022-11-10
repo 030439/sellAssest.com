@@ -6,4 +6,7 @@ class Register_Controller extends CI_Controller{
         $this->load->helper('form');
         $this->load->library('form_validation');
     }
+    public function register(){
+        $this->load->view('register');
+    }
 }
